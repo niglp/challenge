@@ -20,6 +20,7 @@ namespace SiccarCodeTest.Services
 
         /// <summary>
         /// Calculates the total tax for a vehicle using a list of tax rules.
+        /// Implemented by Nigel
         /// </summary>
         /// <param name="vehicle"></param>
         public static void CalulateVehicleTax(Vehicle vehicle)

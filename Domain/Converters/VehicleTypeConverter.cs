@@ -12,6 +12,7 @@ namespace SiccarCodeTest.Domain.Converters
     {
         /// <summary>
         /// The logic for determining which child type a vehicle should be deserialised into. 
+        /// Implemented by Nigel
         /// </summary>
         public override Vehicle Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
@@ -51,7 +52,7 @@ namespace SiccarCodeTest.Domain.Converters
              throw new JsonException("Unable to deserialise vehicle");
         }
 
-        // Nigel
+        // Added by Nigel
         public override bool CanConvert(Type typeToConvert) => typeof(Vehicle).IsAssignableFrom(typeToConvert);
 
         public override void Write(Utf8JsonWriter writer, Vehicle value, JsonSerializerOptions options)

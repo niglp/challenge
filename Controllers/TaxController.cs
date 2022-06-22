@@ -25,6 +25,7 @@ namespace SiccarCodeTest.Controllers
 
         /// <summary>
         /// Registers a vehicle to the repository
+        /// Implemented by Nigel
         /// </summary>
         /// <param name="vehicle">The vehicle that will be stored</param>
         /// <returns name="vehicle">Returns the stored vehicle with the vehicles total tax.</returns>
@@ -39,6 +40,7 @@ namespace SiccarCodeTest.Controllers
 
         /// <summary>
         /// Registers multiple vehicles to the repository
+        /// Implemented by Nigel
         /// </summary>
         /// <param name="vehicles">The list of vehicles to store</param>
         /// <returns name="vehicle">Returns the stored vehicles with the vehicles total tax.</returns>
@@ -58,6 +60,7 @@ namespace SiccarCodeTest.Controllers
 
         /// <summary>
         /// Returns all registered vehicles
+        /// Implemented by Nigel
         /// </summary>
         [HttpGet]
         public async Task<List<Vehicle>> GetVehiclesAsync()
